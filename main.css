@@ -46,12 +46,13 @@ div.gallery img {
     width: 100%;
 }
 
-div.desc {
-    padding: 10px;
+div.desc, div.card {
     text-align: center;
+    padding: 10px;
     background-color: #fff0f4;
     color: #3d4854;
 }
+
 
 /* Body Header Styles */
 
@@ -101,6 +102,45 @@ li a {
     border-radius: 5px;
 }
 
+
+div.card a:link, div.card a:visited {
+    text-decoration: underline;
+    color: #3d4854;
+}
+
+div.card a:hover, div.card a:active {
+    text-decoration: none;
+    color: #dbe3ea;
+}
+
+div.card a:hover:not(.active) {
+  background-color: white;
+}
+
+div.card a {
+    display: block;
+    border-radius: 5px;
+}
+
+div.accordion-item {
+    background-color: #fff0f4;
+}
+
+
+div.accordion a:link, div.accordian a:visited {
+    text-decoration: underline;
+    color: #3d4854;
+}
+
+div.accordion a:hover, div.accordion a:active {
+    text-decoration: none;
+    color: #dbe3ea;
+}
+
+div.accordion a:hover:not(.active) {
+  background-color: white;
+}
+
 /* Grid Styles for Page Body */
 
 body {
@@ -126,7 +166,7 @@ body > footer {grid-area: footer;}
 /* Grid Styles for Nested Grid */
 
 section {
-    display:grid;
+    display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 20px;
     padding: 20px;
